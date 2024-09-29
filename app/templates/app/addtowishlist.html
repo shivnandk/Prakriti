@@ -1,0 +1,45 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Cart{% endblock title %}
+{% block main-content %}
+
+
+<div class="container my-5">
+  
+ <div class="row">
+  {% if w_list %}
+  <h1 class="text-center mb-5">WishList</h1>
+  <div class="col-sm-8">
+  <div class="card">
+   <div class="card-body">
+    <h3>Your List</h3>
+    {% for item in w_list %}
+    <div class="row">
+     <div class="col-sm-3 text-center align-self-center"><img src="{{item.product.product_image.url}}" alt="" srcset="" class="img-fluid img-thumbnail shadow-sm" height="150" width="150"> </div>
+     <div class="col-sm-9">
+      <div>
+       <h5>{{item.product.title}}</h5>
+       <p class="mb-2 text-muted small">{{item.product.description}}</p>
+       <br/>
+       <div class="d-flex justify-content-between">
+        <a href="#" class="remove-cart btn btn-sm btn-secondary mr-3" pid={{item.product.id}}>Remove item </a>
+        <a href="#" class="remove-cart btn btn-sm btn-secondary mr-3" pid={{item.product.id}}>Move to Cart</a>
+        <p class="mb-0"><span><strong>Rs. {{item.product.discounted_price}}</strong></span></p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <hr class="text-muted">
+    {% endfor %}
+   </div>
+   </div>
+  </div>
+
+  
+  {% else %}
+    <h1 class="text-center mb-5">WishList is Empty</h1>
+{% endif %}
+</div>
+</div>
+
+{% endblock main-content %}

@@ -1,0 +1,72 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner_slider %}
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="{%static 'app/images/banner/b1.png'%}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <img src="{%static 'app/images/banner/b2.png'%}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <img src="{%static 'app/images/banner/b3.png'%}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <img src="{%static 'app/images/banner/b4.png'%}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+{%endblock banner_slider %}
+
+
+{% block main-content %}
+ <div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+            This is a public limited company having its 
+            registered office at Indore City of Madhya Pradesh.
+            The company was made with a motive to cater the need 
+            of plant enthusiasts by providing exclusive plant varities,
+            their plant care guide and related accessories.
+        </p>
+    </div>
+
+    <h2 class="text-center">Vision</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+            To be the go-to online hub for plant lovers,
+             offering a rich variety of plants and expert guidance to inspire vibrant gardens worldwide.
+        </p>
+    </div>
+
+    <br><br>
+    <h2 class="text-center">Mission</h2>    
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+            To provide plant enthusiasts with a seamless online shopping experience by
+             offering a wide selection of high-quality plants and gardening products,
+              supported by excellent customer service, making it easy for them
+               to nurture their green passions.
+        </p>
+    </div>
+ </div>
+ <br><br>
+{% endblock main-content %}
+

@@ -1,0 +1,286 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block banner_slider %}
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="{%static 'app/images/banner/b1.png'%}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <img src="{%static 'app/images/banner/b2.png'%}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <img src="{%static 'app/images/banner/b3.png'%}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <img src="{%static 'app/images/banner/b4.png'%}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+{%endblock banner_slider %}
+
+{% block information %}
+<br/>
+<div class='container'>
+    <div class="row text-center p-5 text-white border-bottom shadow" style="background-color: #487948">
+        <h1> Our Website </h1>
+        <small class="fs-5">
+            Prakriti.com offers a wide range of plants products, related accessories, information about them, their plant care guide and plant disease identification.
+        </small>
+    </div>
+
+</div>
+{% endblock information %}
+
+{% block main-content %}
+    <div class="container">
+    <h2 class="text-center"> Bonzai </h2>
+    <br><br>
+        <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg">
+                  <a href="{% url 'category' 'BZ'%}">
+                    <div class="goodnessseccont text-center">
+                      <img src="{% static 'app\images\product\cedar bonsai.jpeg' %}" class="img-responsive center-block" alt="">
+                      <p class="mlkpro">Cedar Bonzai</p>
+                    </div>
+                  </a>
+                </div>
+            </div>
+
+                <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                    <div class="goodnesssec buttermilk curdbgpro">
+                      <a href="{% url 'category' 'BZ'%}">
+                        <div class="goodnessseccont text-center">
+                          <img src="{% static 'app\images\product\azalea.jpeg' %}" class="img-responsive center-block" alt="">
+                          <p class="mlkpro">Azalea</p>
+                        </div>
+                      </a>
+                    </div>
+                </div>  
+
+                    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                        <div class="goodnesssec buttermilk buttermilk">
+                          <a href="{% url 'category' 'BZ'%}">
+                            <div class="goodnessseccont text-center">
+                              <img src="{% static 'app\images\product\Chinese Elm.png' %}" class="img-responsive center-block" alt="">
+                              <p class="mlkpro">Chinese Elm</p>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+            </div>
+
+              <br><br>
+
+            <div class="row container">
+              <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                  <div class="goodnesssec buttermilk smbg">
+                    <a href="{% url 'category' 'BZ'%}">
+                      <div class="goodnessseccont text-center">
+                        <img src="{% static 'app\images\product\Juniper Plant .png' %}" class="img-responsive center-block" alt="">
+                        <p class="mlkpro">Juniper Plant</p>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+  
+                  <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                      <div class="goodnesssec buttermilk curdbgpro">
+                        <a href="{% url 'category' 'BZ'%}">
+                          <div class="goodnessseccont text-center">
+                            <img src="{% static 'app\images\product\Japanese Flowering Cherry .png' %}" class="img-responsive center-block" alt="">
+                            <p class="mlkpro">Japenese Flowering Cherry</p>
+                          </div>
+                        </a>
+                      </div>
+                  </div>  
+  
+                      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                          <div class="goodnesssec buttermilk buttermilk">
+                            <a href="{% url 'category' 'BZ'%}">
+                              <div class="goodnessseccont text-center">
+                                <img src="{% static 'app\images\product\Boxwood (Buxus spp.).png' %}" class="img-responsive center-block" alt="">
+                                <p class="mlkpro">Boxwood(Buxus spp.)</p>
+                              </div>
+                            </a>
+                          </div>
+                      </div>
+  
+
+        </div>
+    </div>
+    <br/> <br/>
+    {%block faqs%}
+    <div class="container mb-5">
+      <h2 class="text-center mb-3">FAQS</h2>
+      <div class="accordion" id="accordionExampleY">
+        <div class="accordion-item">
+          <h2 class="accordion-header text-white" id="headingOneY">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOneY" aria-expanded="true" aria-controls="collapseOneY">
+              How often should I water my plants?
+            </button>
+          </h2>
+          <div id="collapseOneY" class="accordion-collapse collapse show" aria-labelledby="headingOneY"
+            data-bs-parent="#accordionExampleY">
+            <div class="accordion-body">
+              The frequency of watering depends on the type of plant and its specific needs. Generally,
+              it's best to water when the top inch of soil feels dry to the touch. Overwatering can be as
+              harmful as underwatering, so it's important to find the right balance for each plant.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwoY">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwoY" aria-expanded="false" aria-controls="collapseTwoY">
+               What is the best soil for my garden?
+            </button>
+          </h2>
+          <div id="collapseTwoY" class="accordion-collapse collapse" aria-labelledby="headingTwoY"
+            data-bs-parent="#accordionExampleY">
+            <div class="accordion-body">
+              The best soil type for your garden depends on the plants you're growing. 
+              However, well-draining soil with good organic matter content is usually ideal. 
+              You can improve soil quality by adding compost or other organic amendments.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThreeY">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThreeY" aria-expanded="false" aria-controls="collapseThreeY">
+               How can I prevent common plant pests and diseases?
+            </button>
+          </h2>
+          <div id="collapseThreeY" class="accordion-collapse collapse" aria-labelledby="headingThreeY"
+            data-bs-parent="#accordionExampleY">
+            <div class="accordion-body">
+              Preventing pests and diseases involves maintaining good plant hygiene, providing proper air circulation, 
+              and regularly inspecting plants for signs of trouble. Using natural remedies or organic pesticides can also help control infestations.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFourY">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFourY" aria-expanded="false" aria-controls="collapseFourY">
+               What are the best practices for fertilizing plants?
+            </button>
+          </h2>
+          <div id="collapseFourY" class="accordion-collapse collapse" aria-labelledby="headingFourY"
+            data-bs-parent="#accordionExampleY">
+            <div class="accordion-body">
+              Fertilize your plants based on their specific needs. Use a balanced fertilizer with
+              the right NPK (nitrogen, phosphorus, potassium) ratio for your plants, and follow the recommended application rates.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFiveY">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFiveY" aria-expanded="false" aria-controls="collapseFiveY">
+               How do I choose the right plants for my garden's climate?
+            </button>
+          </h2>
+          <div id="collapseFiveY" class="accordion-collapse collapse" aria-labelledby="headingFiveY"
+            data-bs-parent="#accordionExampleY">
+            <div class="accordion-body">
+              Select plants that are native or well-suited to your climate zone. 
+              Consult with a local nursery or gardening center for recommendations on plants that thrive in your area.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSixY">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSixY" aria-expanded="false" aria-controls="collapseSixY">
+              What is the ideal amount of sunlight for different plants?
+            </button>
+          </h2>
+          <div id="collapseSixY" class="accordion-collapse collapse" aria-labelledby="headingSixY"
+            data-bs-parent="#accordionExampleY">
+            <div class="accordion-body">
+              The ideal sunlight requirements vary by plant type. Some plants need full sun (6-8 hours of direct sunlight), while
+               others thrive in partial sun or shade. Check the plant's care label or do research to determine its light requirements.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSevenY">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSevenY" aria-expanded="false" aria-controls="collapseSevenY">
+              How can I propagate my plants?
+            </button>
+          </h2>
+          <div id="collapseSevenY" class="accordion-collapse collapse" aria-labelledby="headingSevenY"
+            data-bs-parent="#accordionExampleY">
+            <div class="accordion-body">
+              Plant propagation methods include taking cuttings, sowing seeds, or dividing mature plants.
+              Each method has specific steps and requirements, so follow guidelines for the plant you want to propagate.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEightY">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEightY" aria-expanded="false" aria-controls="collapseEightY">
+               What should I do to prepare my garden for winter?
+            </button>
+          </h2>
+          <div id="collapseEightY" class="accordion-collapse collapse" aria-labelledby="headingEightY"
+            data-bs-parent="#accordionExampleY">
+            <div class="accordion-body">
+              Preparing your garden for winter involves mulching, protecting delicate plants, and cleaning up the 
+              garden bed. It's essential to winterize outdoor plants to ensure their survival through cold weather.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNineY">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseNineY" aria-expanded="false" aria-controls="collapseNineY">
+               How do I create a low-maintenance garden?
+            </button>
+          </h2>
+          <div id="collapseNineY" class="accordion-collapse collapse" aria-labelledby="headingNineY"
+            data-bs-parent="#accordionExampleY">
+            <div class="accordion-body">
+              Low-maintenance gardening involves selecting hardy, low-care plants, using mulch to suppress weeds, and 
+              minimizing the need for constant watering or pruning. Consider native and drought-tolerant plants.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTenY">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTenY" aria-expanded="false" aria-controls="collapseTenY">
+               What are the benefits of organic gardening?
+            </button>
+          </h2>
+          <div id="collapseTenY" class="accordion-collapse collapse" aria-labelledby="headingTenY"
+            data-bs-parent="#accordionExampleY">
+            <div class="accordion-body">
+              Organic gardening promotes soil health, reduces the use of synthetic chemicals, and fosters a more sustainable and 
+              eco-friendly approach to gardening. It also encourages biodiversity and healthy ecosystems.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{%endblock faqs%}    
+{% endblock main-content %}
+
